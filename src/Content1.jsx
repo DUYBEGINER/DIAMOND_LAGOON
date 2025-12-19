@@ -55,14 +55,14 @@ function Content1() {
   }, [isDragging, handleMouseMove, handleMouseUp, handleTouchMove]);
 
   return (
-    <section className="min-h-[550px] md:w-screen mx-0 md:mx-auto justify-center px-0 md:px-5 flex flex-col lg:flex-row lg:gap-0 items-stretch bg-[#e8e6e1] py-12 md:py-18 lg:py-25 overflow-hidden">
+    <section className="min-h-[550px] md:w-full mx-0 md:mx-auto justify-center px-0 lg:px-5 flex flex-col lg:flex-row lg:gap-0 items-stretch bg-[#e8e6e1] py-12 md:py-18 lg:py-25 overflow-hidden">
           {/* Left Content */}
-          <div className="order-2 lg:order-1 w-full py-10 lg:w-[35%] pr-0 lg:pr-10 lg:max-w-[500px] space-y-6 lg:space-y-8 shrink-0">
+          <div className="order-2 lg:order-1 w-full px-8 lg:px-0 py-10 lg:w-[35%] lg:pr-10 lg:max-w-[500px] space-y-6 lg:space-y-8 ">
             <h2 className="text-[2rem] leading-10 whitespace-pre-wrap font-display font-semibold sm:text-[2rem] md:text-[2rem] text-[#082B26] tracking-[5px]">
               KHÁM PHÁ VẺ ĐẸP THƠ MỘNG CỦA DẢI ĐẤT MIỀN TRUNG VIỆT NAM  
             </h2>
             
-            <div className="pl-8 space-y-4">
+            <div className="pl-0 md:pl-8 space-y-4">
               <div className="space-y-4 font-niramit text-justify text-[#082B26] font-[400px] text-[0.875rem] sm:text-[0.9375rem] md:text-[1rem] leading-relaxed">
                 <p>
                   Tận hưởng một thiên đường của những giấc quan tại Banyan Tree Lãng Cô, một khu nghỉ dưỡng biển với 89 căn biệt thự hạng sang, tất cả đều có hồ bơi riêng, nằm nép mình giữa biển Đông xanh ngắt và dãy Trường Sơn hùng vĩ.
@@ -76,10 +76,10 @@ function Content1() {
           </div>
 
           {/* Right Image Comparison Slider */}
-          <div className="min-h-[500px] w-full lg:max-w-[900px] order-1 lg:order-2 overflow-hidden">
+          <div className="w-full lg:max-w-[900px] order-1 lg:order-2 overflow-hidden">
             <div 
               ref={containerRef}
-              className="relative mx-auto w-full h-[500px] lg:h-full cursor-ew-resize select-none"
+              className="relative mx-auto w-full h-[300px] lg:h-full cursor-ew-resize select-none"
             >
                 {/* Top Right Diamond Icon */}
                 <div className="absolute -top-4 -right-4 z-30">
