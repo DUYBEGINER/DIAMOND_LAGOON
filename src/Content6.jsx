@@ -88,7 +88,7 @@ const SwiperCarousel = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="relative mt-20 md:my-auto w-full max-w-[1400px] h-[500px] md:h-[800px] flex justify-center items-center"
+        className="relative mt-32 py-5 w-full max-w-[1400px] h-[500px] md:h-[800px] flex justify-center items-center"
       >
         <Swiper
           onBeforeInit={(swiper) => {
