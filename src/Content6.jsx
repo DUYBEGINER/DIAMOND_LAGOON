@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import { motion } from "framer-motion";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -72,11 +73,23 @@ const SwiperCarousel = () => {
     <div className="relative w-full h-[calc(100vh-150px)] bg-[#0f1912] overflow-hidden flex flex-col justify-center items-center text-white">
       <div className="absolute inset-0 bg-[url('https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2021-10%2FBG%202.jpg&w=3840&q=25')] bg-cover opacity-20 pointer-events-none" />
 
-      <h1 className="font-semibold absolute top-10 text-2xl md:text-4xl tracking-widest text-center z-10 drop-shadow-lg">
+      <motion.h1 
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="font-semibold absolute top-10 text-2xl md:text-4xl tracking-widest text-center z-10 drop-shadow-lg"
+      >
         Khám phá Miền Trung Việt Nam
-      </h1>
+      </motion.h1>
 
-      <div className="relative mt-20 md:my-auto w-full max-w-[1400px] h-[500px] md:h-[800px] flex justify-center items-center">
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="relative mt-20 md:my-auto w-full max-w-[1400px] h-[500px] md:h-[800px] flex justify-center items-center"
+      >
         <Swiper
           onBeforeInit={(swiper) => {
             swiperRef.current = swiper;
@@ -145,19 +158,27 @@ const SwiperCarousel = () => {
           ))}
         </Swiper>
 
-        <button
+        <motion.button
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          viewport={{ once: true }}
           onClick={() => swiperRef.current?.slidePrev()}
           className="absolute left-2 md:left-10 z-50 p-2 text-white/50 hover:text-white transition-all"
         >
           <ChevronLeft className="w-10 h-10 md:w-16 md:h-16" strokeWidth={1} />
-        </button>
-        <button
+        </motion.button>
+        <motion.button
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          viewport={{ once: true }}
           onClick={() => swiperRef.current?.slideNext()}
           className="absolute right-2 md:right-10 z-50 p-2 text-white/50 hover:text-white transition-all"
         >
           <ChevronRight className="w-10 h-10 md:w-16 md:h-16" strokeWidth={1} />
-        </button>
-      </div>
+        </motion.button>
+      </motion.div>
 
       <style jsx global>{`
         /* 1. CẤU HÌNH SLIDE CƠ BẢN */

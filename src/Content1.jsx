@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
+import { motion } from "framer-motion";
 
 function Content1() {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -63,21 +64,43 @@ function Content1() {
   return (
     <section className="min-h-[550px] md:w-full mx-0 md:mx-auto justify-center px-0 lg:px-5 flex flex-col lg:flex-row lg:gap-0 items-stretch bg-[#e8e6e1] py-12 md:py-18 lg:py-25 overflow-hidden">
       {/* Left Content */}
-      <div className="order-2 lg:order-1 w-full px-8 lg:px-0 py-10 lg:w-[35%] lg:pr-10 lg:max-w-[500px] space-y-6 lg:space-y-8 ">
-        <h2 className="text-[2rem] leading-10 whitespace-pre-wrap font-display font-semibold sm:text-[2rem] md:text-[2rem] text-[#082B26] tracking-[5px]">
+      <motion.div 
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="order-2 lg:order-1 w-full px-8 lg:px-0 py-10 lg:w-[35%] lg:pr-10 lg:max-w-[500px] space-y-6 lg:space-y-8 "
+      >
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="text-[2rem] leading-10 whitespace-pre-wrap font-display font-semibold sm:text-[2rem] md:text-[2rem] text-[#082B26] tracking-[5px]"
+        >
           THAY TIÊU ĐỀ CHỔ NÀY NÈ HUY
-        </h2>
+        </motion.h2>
 
         <div className="pl-0 md:pl-8 space-y-4">
           <div className="space-y-4 font-niramit text-justify text-[#082B26] font-[400px] text-[0.875rem] sm:text-[0.9375rem] md:text-[1rem] leading-relaxed">
-            <p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
               Tận hưởng một thiên đường của những giấc quan tại Banyan Tree Lãng
               Cô, một khu nghỉ dưỡng biển với 89 căn biệt thự hạng sang, tất cả
               đều có hồ bơi riêng, nằm nép mình giữa biển Đông xanh ngắt và dãy
               Trường Sơn hùng vĩ.
-            </p>
+            </motion.p>
 
-            <p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              viewport={{ once: true }}
+            >
               Tọa lạc gần ba thành phố văn hóa du lịch lớn:{" "}
               <a
                 href="#"
@@ -109,13 +132,19 @@ function Content1() {
               công nhận: Phố cổ Hội An, Kính thành Huế và Thánh địa Mỹ Sơn,
               Banyan Tree Lãng Cô là một điểm đến hoàn hảo để khám phá về nguyên
               sơ và thơ mộng của dải đất duyên hải miền Trung Việt Nam.
-            </p>
+            </motion.p>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Right Image Comparison Slider */}
-      <div className="w-full lg:max-w-[900px] order-1 lg:order-2 cursor-grab">
+      <motion.div 
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="w-full lg:max-w-[900px] order-1 lg:order-2 cursor-grab"
+      >
         <div
           ref={containerRef}
           className="relative mx-auto w-full h-[300px] lg:h-full select-none"
@@ -171,7 +200,7 @@ function Content1() {
           </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
