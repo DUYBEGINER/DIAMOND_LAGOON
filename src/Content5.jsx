@@ -60,7 +60,6 @@ function Content5() {
 }
 
 function VillaCard({ villa }) {
-  const [isFavorite, setIsFavorite] = useState(false);
 
   return (
     <div className="bg-white overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">

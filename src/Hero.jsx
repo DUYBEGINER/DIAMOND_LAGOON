@@ -22,11 +22,15 @@ function Hero() {
           transition: 'transform'
         }}
       >
-        <img 
-          src="https://www.banyantree.com/assets/2025-02/bt-langco-Banyan Tree Lang Co - Beach.jpg"
-          alt="Banyan Tree Lãng Cô"
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover"
-        />
+        >
+          <source src="https://www.pexels.com/download/video/6981411/" type="video/mp4" />
+        </video>
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/20"></div>
       </div>

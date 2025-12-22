@@ -20,19 +20,19 @@ const DESTINATIONS = [
     id: 3,
     title: "Đầm Lập An - Vịnh Lăng Cô",
     description: "Chiêm ngưỡng vẻ đẹp của 'Tuyệt Tình Cốc miền Trung' với trời nước bao la, nơi giao hòa giữa mây trời và mặt nước trong xanh phẳng lặng.",
-    image: "https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2025-02%2FBT-langco-%20One-bedroom%20Seaview%20Hill%20Pool%20Villa%20-%20Private%20Pool.jpg&w=1920&q=75",
+    image: "https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2025-03%2Fbt-langco-local-attractions.jpg&w=640&q=75",
   },
   {
     id: 4,
     title: "Phố Cổ Hội An",
     description: "Những ngôi nhà cổ phủ đầy rêu phong, những chiếc đèn lồng rực rỡ và dòng sông Hoài thơ mộng mang đến cảm giác hoài cổ yên bình.",
-    image: "https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2025-02%2FBT-langco-%20One-bedroom%20Seaview%20Hill%20Pool%20Villa%20-%20Private%20Pool.jpg&w=1920&q=75",
+    image: "https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2025-03%2Fbt-langco-hoian.jpg&w=640&q=75",
   },
   {
     id: 5,
     title: "Cố Đô Huế",
     description: "Khám phá vẻ đẹp trầm mặc, cổ kính của kinh thành xưa với những cung điện vàng son và lăng tẩm uy nghiêm đậm chất lịch sử.",
-    image: "https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2025-02%2FBT-langco-%20One-bedroom%20Seaview%20Hill%20Pool%20Villa%20-%20Private%20Pool.jpg&w=1920&q=75",
+    image: "https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2025-03%2Fbt-langco-local.jpg&w=640&q=75",
   },
 ];
 
