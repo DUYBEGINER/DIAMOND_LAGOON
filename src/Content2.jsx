@@ -19,7 +19,8 @@ function Item({ icon, children }) {
 
 function Content2() {
   return (
-    <section className="w-full bg-white">
+    <section className="relative w-full bg-white">
+      <div className="absolute inset-0 bg-gray-100/50 text-red-600 font-bold text-2xl"> Cái này có để không ?</div>
       <div className="mx-auto w-full max-w-[1700px] px-5 lg:px-12 py-10 lg:py-14">
         <div className="flex flex-col lg:flex-row lg:items-stretch">
           {/* Main columns */}

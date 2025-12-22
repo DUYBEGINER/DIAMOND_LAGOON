@@ -65,7 +65,7 @@ function Content1() {
       {/* Left Content */}
       <div className="order-2 lg:order-1 w-full px-8 lg:px-0 py-10 lg:w-[35%] lg:pr-10 lg:max-w-[500px] space-y-6 lg:space-y-8 ">
         <h2 className="text-[2rem] leading-10 whitespace-pre-wrap font-display font-semibold sm:text-[2rem] md:text-[2rem] text-[#082B26] tracking-[5px]">
-          KHÁM PHÁ VẺ ĐẸP THƠ MỘNG CỦA DẢI ĐẤT MIỀN TRUNG VIỆT NAM
+          THAY TIÊU ĐỀ CHỔ NÀY NÈ HUY
         </h2>
 
         <div className="pl-0 md:pl-8 space-y-4">
@@ -149,7 +149,8 @@ function Content1() {
             <div className="absolute -top-5 left-1/2 -translate-x-1/2 w-5 h-5">
               <svg
                 className="w-5 h-5 text-gray-600"
-                fill="currentColor"
+                fill="white"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path d="M12 3.01c-1.097 1.139-4.898 8.107-9.358 8.718 5.59 2.13 9.247 9.378 9.247 9.378S14.267 13.26 21.057 12c-.524-1.733-4.223.694-9.057-8.99z" />
@@ -160,7 +161,8 @@ function Content1() {
             <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 w-5 h-5" >
              <svg
                 className="w-5 h-5 text-gray-600"
-                fill="currentColor"
+                fill="white"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path d="M12 3.01c-1.097 1.139-4.898 8.107-9.358 8.718 5.59 2.13 9.247 9.378 9.247 9.378S14.267 13.26 21.057 12c-.524-1.733-4.223.694-9.057-8.99z" />
