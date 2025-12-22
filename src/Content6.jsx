@@ -91,6 +91,7 @@ const SwiperCarousel = () => {
             },
           }}
           loop={true}
+          slideToClickedSlide={true}
           observer={true}
           observeParents={true}
           watchSlidesProgress={true}
